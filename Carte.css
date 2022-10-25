@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --ROUJE:#EA3449;
+    --White:#fff;
+}
+h1,h2,h3,h4,p{
+    color: var(--White);
+    font-weight: 300;
+}
+/****** scroll******/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/****** scroll******/
+/***** NAVIGATION BAR****/
+.logo{
+    height: 70px;
+    width: 70px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    width: 100%;
+    height: 70px;
+}
+ul{
+    display: flex; 
+    margin: 0 50px;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+body{
+   /*  background-image: linear-gradient(180deg,rgba(180,0,0,1),
+    rgba(0,0,0,1)),url(./BGs/BG\ carte.jpg);  
+    background-size: cover;  */
+    background-color: black;
+}  
+/* .filtre{
+    margin-top: 100px;
+}
+.filtre-input{
+    width: 180px;
+    height: 40px;
+}
+.filtre-button{
+     transform: translateX(-20px);
+    border: none;
+    
+}  */
+
+.order{
+    background-color: var(--White);
+    position: fixed;
+    right: 50px;
+    top: 100px;
+    height: 400px;
+    width: 300px;
+}
+
+.order-header{
+    background-color: #EA3449;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: var(--White);
+}
+.order-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #EA3449;
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.products{
+    /* background-color: #fff; */
+    position: absolute;
+    overflow:scroll;
+    overflow-x: hidden;
+    left: 50px;
+    top: 100px;
+    height: 80%;
+    width: 500px;
+}
+
+.product{
+    display: flex;
+    background-color: var(--ROUJE);
+    border-radius: 20px 0px 0px 20px ;
+    
+    margin-top: 20px;
+    height: 130px;
+    padding-right: 20px;
+}
+
+.picture{
+    background-image: url(./plats/czefczfz.png);
+    /* background-color: var(--ROUJE); */
+    background-size: contain;
+    border-radius: 20px 0px 0px 20px ;
+    height: 15Opx;
+    width: 150px;
+    display: inline-block;
+}
+.infos{
+    background-color: #EA3449;
+    margin: 10px;
+    width: 300px;
+    height: max;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.button{
+    background-color: none;
+    float: right;
+    margin: auto;
+}
