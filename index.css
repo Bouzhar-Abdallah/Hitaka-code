@@ -59,12 +59,19 @@ body{
 span{
     display: block;
 }
-.home{
-    /* position: relative; */
-    /* top: 100px; */
+/* .home{
+    position: relative;
+    top: 100px;
     margin-top: 80px;
     padding: 10px 50px 20px 50px; 
     height:100%;
+} */
+body{
+    overflow: hidden;
+}
+main{
+    height: 100vh;
+    
 }
 .main-title{
     /* background-color: violet; */
@@ -79,7 +86,7 @@ span{
 }
 
 .caption{
-    margin-top: 180px;
+    /* margin-top: 180px; */
     text-align: center;
     
 }
@@ -97,5 +104,6 @@ span{
 }
 .footer{
     height: 40px;
+
     background-color: #EA3449;
 }

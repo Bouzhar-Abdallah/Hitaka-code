@@ -8,6 +8,7 @@
 :root{
     --ROUJE:#EA3449;
     --White:#fff;
+    --blue:#0D1F2D;
 }
 h1,h2,h3,h4,p{
     color: var(--White);
@@ -37,6 +38,7 @@ h1,h2,h3,h4,p{
 .logo{
     height: 70px;
     width: 70px;
+
 }
 nav{
     position: fixed;
@@ -66,18 +68,15 @@ body{
     background-size: cover;  */
     background-color: black;
 }  
-/* .filtre{
-    margin-top: 100px;
+.filtre{
+    margin-top: 80px;
 }
-.filtre-input{
-    width: 180px;
-    height: 40px;
-}
-.filtre-button{
-     transform: translateX(-20px);
-    border: none;
+
+.filtre-button i{
+   width: 50px;
+   height: 50px;
     
-}  */
+}  
 
 .order{
     background-color: var(--White);
@@ -124,20 +123,18 @@ body{
 
 .product{
     display: flex;
+    /* display: none; */
     background-color: var(--ROUJE);
     border-radius: 20px 0px 0px 20px ;
-    
     margin-top: 20px;
     height: 130px;
     padding-right: 20px;
+    cursor: pointer;
 }
 
-.picture{
-    background-image: url(./plats/czefczfz.png);
-    /* background-color: var(--ROUJE); */
-    background-size: contain;
+.picture img{
     border-radius: 20px 0px 0px 20px ;
-    height: 15Opx;
+    height: 130px;
     width: 150px;
     display: inline-block;
 }
@@ -154,4 +151,11 @@ body{
     background-color: none;
     float: right;
     margin: auto;
+}
+.fa-solid{
+    color: var();
+    font-size: 50px;
+}
+:is(.product:hover) .fa-solid{
+    color: yellow;
 }

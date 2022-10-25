@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --ROUJE:#EA3449;
+    --White:#fff;
+}
+h1,h2,h3,h4,p{
+    color: var(--White);
+}
+p{
+    font-weight: 200;
+    font-size: 14px;
+}
+h3{
+    color: #EA3449;
+    font-weight: 400;
+    font-size: 30px;
+}
+h4{
+    font-weight: 500;
+    font-size: 14px;
+
+}
+/***** NAVIGATION BAR****/
+.logo{
+    height: 70px;
+    width: 70px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    width: 100%;
+    height: 70px;
+}
+ul{
+    display: flex; 
+    margin: 0 50px;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    font-weight: 700;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+
+body{
+    /* background-image: linear-gradient(180deg,rgba(0,0,0,1),
+    rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg);  */
+    background-color: black;
+    /* background-size: cover; */
+    /* background-image: url(./BGs/home-bg.jpg);  
+    background-size:120%;
+    background-position: left;
+    */
+    /* width: 100vh; */
+    
+} 
+main{
+    padding: 80px;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    background-color: var(--ROUJE);
+ 
+    width: 50%;
+    height: 4px;
+    margin: 80px 0;
+}
+.introduction{
+    display: flex;
+    height: 450px;
+background-color: aqua;
+}
+.phylosophy{
+    background-color: var(--ROUJE);
+    width: 100%;
+    padding: 40px 20px;
+}
+.phylosophy :nth-child(3){
+    margin-top: 40px;
+}
+main .introduction img{
+    height: 450px;
+    width: auto;
+
+   /*  float:inline-end; */
+}
+.introduction h3{
+    color: var(--White);
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.introduction p{
+    font-size: 18px;
+    line-height: 150%;
+}
+
+
+.offers{
+    display: flex;
+}
+.offer,.adresse{
+    padding: 10px 2px;
+    background-color: var(--ROUJE);
+    text-align: center;
+
+}
+.adresse{
+    margin: 0 5%;
+    width: 25%;
+}
+.quote{
+    text-align: center;
+    width: 70%;
+}
+.quote h4{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+.quote p{
+    font-size: 20px;
+}
+h3,h4{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.adresses{
+    display: flex;
+    justify-content: center;
+}
