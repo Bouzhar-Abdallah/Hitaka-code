@@ -38,8 +38,13 @@ h1,h2,h3,h4,p{
 .logo{
     height: 70px;
     width: 70px;
-
 }
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
 nav{
     position: fixed;
     top: 0;
@@ -58,17 +63,23 @@ nav ul li{
     margin: 0 20px;
 }
 nav ul li a{
-    font-weight: 700;
-    color: white;
     text-decoration: none;
+    color: unset;
+}
+nav ul li{
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
 }
 body{
-   /*  background-image: linear-gradient(180deg,rgba(180,0,0,1),
-    rgba(0,0,0,1)),url(./BGs/BG\ carte.jpg);  
-    background-size: cover;  */
-    background-color: black;
+    background-image: linear-gradient(180deg,rgba(0,0,0,1),
+    rgba(0,0,0,0.5)),url(./BGs/possible\ bg.jpg); 
+    
+    background-size: cover;
+    
 }  
 .filtre{
+    position: absolute;
     margin-top: 80px;
 }
 
@@ -112,7 +123,9 @@ body{
 }
 .products{
     /* background-color: #fff; */
-    position: absolute;
+    border:10px solid var(--White);
+    margin-top: 20px;
+    position: fixed;
     overflow:scroll;
     overflow-x: hidden;
     left: 50px;
@@ -159,3 +172,16 @@ body{
 :is(.product:hover) .fa-solid{
     color: yellow;
 }
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;  
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  footer i{
+    color: var(--White);
+    cursor: pointer;
+  }

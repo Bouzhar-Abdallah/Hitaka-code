@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/a26b51a86d.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
     <nav class="navigation-bar">
         <a href="index.html"><img class="logo" src="./icons/logo.png"></a>
         <div class="nav-links">
@@ -24,27 +22,31 @@
             </ul>
         </div>
     </nav>
-<main>
+    <main>
+        <form class="form-holder" action="">
+            <div class="input-line">
+                <fieldset class="infos">
+                    <label for="one">First Name: <input class="text-input" id="one" name="first-name" type="text" required /></label>
+                    <label for="two">Last Name: <input id="two" name="last-name" type="text" required /></label>
+                    <label for="three">Email: <input id="three" name="number" type="number" required /></label>
+                    <label for="four">Num: <input id="four" name="email" type="email" required /></label>
+                </fieldset>
+                <fieldset class="message">
+                    
+                    <label for="message">Message :
+                    <textarea name="message" id="" cols="30" rows="10"></textarea></label>
 
-    <div class="home">
-        <div class="main-title">
-            <h1><span>Hitika</span>  <span>Cuisines & Sushi</span> </h1>
-        </div>
-        
-        <div class="caption">
-            <h3 class="title">A FAVORITE DESTINATION
-            </h3>
-            <p>With over 38 years in the area, we offer some of the finest food at our Sushi Bar, and Teppan Grill. Enjoy a lavish Dining Room with accents that highlight our cultre and traditions.</p>
-        </div>
-    </div>
-
+                </fieldset>
+                <button><span>Submit</span></button>
+            </div>
+        </form>
+    </main>
     <footer>
         <i class="fa-brands fa-square-facebook"></i>
         <i class="fa-brands fa-square-twitter"></i>
         <i class="fa-brands fa-square-instagram"></i>
         <i class="fa-brands fa-square-snapchat"></i>
     </footer>
-</main>
 
 </body>
 </html>

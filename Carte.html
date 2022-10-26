@@ -20,27 +20,30 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="Carte.html">Carte</a></li>
                 <li><a href="apropos.html">Apropos</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="Contact.html">Contact</a></li>
             </ul>
         </div>
     </nav>
 </div>
-<div class="filtre">
- <input class="filtre-input" placeholder="categories" list="browsers" name="browser" id="browser">
- <datalist id="browsers">
-   <option value="Obento">
-   <option value="salade">
-   <option value="sushi">
- </datalist>
 
-<!--  <button class="filtre-button" type="button"><i class="fa-sharp fa-solid fa-caret-down"></i></i></button> -->
- </div>
+
+<div class="filtre">
+    <label class="filtre-input"  >
+        <select name="referrer" >
+          <option >Categories</option>
+          <option > Obento</option>
+          <option > Salade</option>
+          <option > Sushi</option>
+        </select>
+    </label>
+</div>
  
-  <section class="order">
+  <div class="order">
     <div class="order-header">Order</div>
     <div class="order-footer">Price</div>
-  </section>
-  <section class="products" >
+  </div>
+  <main>
+  <div class="products" >
     <div class="product">
         <div class="picture"><img src="./plats/czefczfz.png" alt=""></div>
         <div class="infos">
@@ -114,6 +117,13 @@
         <div class="button"><i class="fa-solid fa-circle-plus"></i></div>
     </div>
     
-  </section>
+  </div>
+  <footer>
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-square-twitter"></i>
+    <i class="fa-brands fa-square-instagram"></i>
+    <i class="fa-brands fa-square-snapchat"></i>
+</footer>
+</main>
 </body>
 </html>

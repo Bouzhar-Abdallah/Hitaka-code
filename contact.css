@@ -58,108 +58,89 @@ nav ul li{
     color: white;
 }
 
-
 body{
     background-image: linear-gradient(180deg,rgba(0,0,0,1),
     rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg); 
     background-size: cover;
-    background-position: right;
+    height: min-content;   
 } 
+
 main{
-    padding: 80px;
-    padding-top: 150px;
+    /* padding: 80px; */
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.line{
-    background-color: var(--ROUJE);
- 
-    width: 50%;
-    height: 4px;
-    margin: 80px 0;
-}
-.introduction{
+    width: fit-content;
+    height: fit-content;
+
+   
+} 
+.input-line{
     display: flex;
-    height: 450px;
-background-color: aqua;
-}
-.phylosophy{
+    flex-direction: column;
+    width: max-content;
     background-color: var(--ROUJE);
-    width: 100%;
-    padding: 40px 20px;
 }
-.phylosophy :nth-child(3){
-    margin-top: 40px;
-}
-main .introduction img{
-    height: 450px;
-    width: auto;
-
-   /*  float:inline-end; */
-}
-.introduction h3{
-    color: var(--White);
-    font-size: 30px;
-    text-align: start;
-    margin-bottom: 10px;
-}
-
-.introduction p{
-    font-size: 18px;
-    line-height: 150%;
-}
-
-
-.offers{
+.infos{
     display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px 30px;
 }
-.offer,.adresse{
-    padding: 10px 2px;
-    background-color: var(--ROUJE);
-    text-align: center;
-
-}
-.adresse{
-    margin: 0 5%;
-    width: 25%;
-}
-.quote{
-    text-align: center;
-    width: 70%;
-}
-.quote h4{
-    margin-top: 30px;
-    margin-bottom: 0;
-}
-.quote p{
-    font-size: 20px;
-}
-h3,h4{
-    text-align: center;
-    margin-bottom: 30px;
-}
-.adresses{
+.message{
     display: flex;
-    justify-content: center;
-}
-footer {
+    flex-direction: column;
+    align-items: flex-end;
     
+    padding: 5px 30px;
+}
+label{
+    margin: 10px;
+    color: var(--White);
+
+}
+input,textarea{
+    width: 300px;
+
+}
+input{
+    height: 30px;
+    border: none;
+}
+fieldset{
+    border: none;
+}
+button{
+    width: fit-content;
+    align-self: center;
+    margin: 20px;
+    padding: 8px 40px;
+    border: none;
+    background-color: var(--White);
+    border-radius: 10px;
+}
+button span{
+    font-weight: bold;
+}
+
+.form-holder{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+footer {
+
     width: 100%;
     height: 2rem;  
     display: flex;
     justify-content: center;
     gap: 5px;
+    z-index: 1;
+    
   }
   footer i{
     color: var(--White);
     cursor: pointer;
-  }
-
-  @media screen and (max-width:800px) {
-    main .introduction img{
-        height: 230px;
-        
-    }
-    
   }
