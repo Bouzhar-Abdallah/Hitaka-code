@@ -208,12 +208,28 @@ const menu = [
         }
     });
 
+    class Orders {
+        constructor(_id,_q,_name,_price){
+            this.id = _id;
+            this.q  = _q;
+            this.name = _name;
+            this.price = _price;
+        }
+        set setQ(_q){
+            this.q=_q;
+        }
 
+        increment(){
+            this.q=this.q+1;
+        }
+      }
+    
 
 
 
 
   function displayMenuItems(menuItems){
+
     let displayMenu = menuItems.map(function(item){
         
         return `
@@ -232,23 +248,34 @@ const menu = [
     products.innerHTML = displayMenu;
     if(products.firstChild){
        let listedProducts = products.querySelectorAll('.product');
-       const list = [];
+       
        listedProducts.forEach(function(elem){
         elem.addEventListener('click', function(){
-            let platName = elem.querySelector('.infos .plat-name').textContent;
-            let platPrice = elem.querySelector('.infos .plat-price').textContent;
-            let orders = document.querySelector(".orders");
-            list.push([platName,platPrice]);
-            /* clicked(platName,platPrice); */
-            clicked(orders,list);
+            const allKeys = Object.keys(localStorage);
+            if(allKeys.includes(this.id)){
+                let existantOrder = JSON.parse(localStorage.getItem(this.id));
+                existantOrder.q=existantOrder.q+1;
+                localStorage.setItem(this.id, JSON.stringify(existantOrder));
+            }
+            else {
+                let newOrder = new Orders(this.id,1,elem.querySelector('.infos .plat-name').textContent,elem.querySelector('.infos .plat-price').textContent);
+                localStorage.setItem(this.id, JSON.stringify(newOrder));
+            }
+            
+        ordersUpdateDisplay(allKeys);  
         });
         
        })
     }
   }
 
-  function clicked(orders,list){
-    let displayOrder = list.map(function(item){
+   function  ordersUpdateDisplay(allKeys){
+    let list = [];
+    for(let i of allKeys){
+        list[i]= JSON.parse(localStorage.getItem(i));
+    }
+ 
+   /*  let displayOrder = list.map(function(item){
         
         return `
         <div class="choice">
@@ -264,5 +291,14 @@ const menu = [
         `;
     });
     displayOrder = displayOrder.join('');
-    orders.innerHTML = displayOrder;
+    orders.innerHTML = displayOrder; */
   }
+
+  
+  /* let order = new Orders(1,"test","$15.99");
+  order.setQ=2;
+  let orderstring = JSON.stringify(order);
+  localStorage.setItem("lastname", orderstring);
+
+  let orderobj = JSON.parse(localStorage.getItem("lastname"));
+  console.log(orderobj.name); */
