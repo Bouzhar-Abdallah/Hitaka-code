@@ -9,7 +9,7 @@ const menu = [
     },
     {
       id: 2,
-      title: "pancakes",
+      title: "test",
       category: "Sushi",
       price: 15.99,
       img: "./images/item-2.jpg",
@@ -17,7 +17,7 @@ const menu = [
     },
     {
       id: 3,
-      title: "pancakes",
+      title: "again",
       category: "Sushi",
       price: 35.99,
       img: "./images/item-3.jpg",
@@ -217,7 +217,7 @@ const menu = [
     let displayMenu = menuItems.map(function(item){
         
         return `
-        <div class="product">
+        <div class="product" id="${item.id}">
         <div class="picture"><img src=${item.img} alt=${item.img}></div>
         <div class="infos">
             <p class="plat-name">${item.title}</p>
@@ -230,4 +230,39 @@ const menu = [
     });
     displayMenu = displayMenu.join('');
     products.innerHTML = displayMenu;
+    if(products.firstChild){
+       let listedProducts = products.querySelectorAll('.product');
+       const list = [];
+       listedProducts.forEach(function(elem){
+        elem.addEventListener('click', function(){
+            let platName = elem.querySelector('.infos .plat-name').textContent;
+            let platPrice = elem.querySelector('.infos .plat-price').textContent;
+            let orders = document.querySelector(".orders");
+            list.push([platName,platPrice]);
+            /* clicked(platName,platPrice); */
+            clicked(orders,list);
+        });
+        
+       })
+    }
+  }
+
+  function clicked(orders,list){
+    let displayOrder = list.map(function(item){
+        
+        return `
+        <div class="choice">
+            <span class="q">Q: 1.
+                <span class="choice-name">${item[0]}</span>
+            </span>
+           
+            <span class="choice-price">${item[1]}
+               <i class="fa-solid fa-circle-minus"></i> 
+            </span>
+            
+        </div>
+        `;
+    });
+    displayOrder = displayOrder.join('');
+    orders.innerHTML = displayOrder;
   }
