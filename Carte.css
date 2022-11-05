@@ -96,6 +96,7 @@ body{
     top: 100px;
     height: 400px;
     width: 300px;
+    display: none;
 }
 
 .order-header{
@@ -143,6 +144,10 @@ body{
     height: 130px;
     padding-right: 20px;
     cursor: pointer;
+}
+
+.product .plat-desc{
+    font-size: 12px;
 }
 
 .picture img{
