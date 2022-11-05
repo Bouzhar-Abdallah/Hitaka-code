@@ -161,16 +161,34 @@ const menu = [
     },
     
     
+    
   ];
 
 
   const products = document.querySelector('.products');
-  const filterSelect = document.querySelector('.filtre')
+ 
+  const filterSelect = document.querySelector('.filtre');
 
 
   //load items
   window.addEventListener('DOMContentLoaded',function(){
     displayMenuItems(menu);
+
+
+  
+    const categories = menu.reduce(function(values,item){
+        if(!values.includes(item.category)){
+            values.push(item.category);
+        }
+       return values
+    },['all']);
+    const categoriesSelect = categories.map(function(category){
+        return `
+        <option class="select-control">${category}</option>
+        `
+    }).join("");
+    filterSelect.innerHTML = categoriesSelect;
+
   });
 
 
