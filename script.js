@@ -166,14 +166,15 @@ const menu = [
 
 
   const products = document.querySelector('.products');
- 
+  const ordersContainer = document.querySelector('.orders');
   const filterSelect = document.querySelector('.filtre');
-
+  let allKeys = Object.keys(localStorage);
 
   //load items
   window.addEventListener('DOMContentLoaded',function(){
     displayMenuItems(menu);
-
+    
+    displayOrders(allKeys);
 
   
     const categories = menu.reduce(function(values,item){
@@ -251,54 +252,47 @@ const menu = [
        
        listedProducts.forEach(function(elem){
         elem.addEventListener('click', function(){
-            const allKeys = Object.keys(localStorage);
+          
             if(allKeys.includes(this.id)){
                 let existantOrder = JSON.parse(localStorage.getItem(this.id));
                 existantOrder.q=existantOrder.q+1;
                 localStorage.setItem(this.id, JSON.stringify(existantOrder));
+
             }
             else {
                 let newOrder = new Orders(this.id,1,elem.querySelector('.infos .plat-name').textContent,elem.querySelector('.infos .plat-price').textContent);
                 localStorage.setItem(this.id, JSON.stringify(newOrder));
+
             }
-            
-        ordersUpdateDisplay(allKeys);  
+            allKeys = Object.keys(localStorage);
+            displayOrders(allKeys); 
+        /* ordersUpdateDisplay(allKeys);  */ 
         });
-        
+
        })
     }
   }
 
-   function  ordersUpdateDisplay(allKeys){
-    let list = [];
-    for(let i of allKeys){
-        list[i]= JSON.parse(localStorage.getItem(i));
-    }
- 
-   /*  let displayOrder = list.map(function(item){
-        
-        return `
-        <div class="choice">
-            <span class="q">Q: 1.
-                <span class="choice-name">${item[0]}</span>
+
+  function displayOrders(allKeys) {
+    ordersContainer.innerHTML='';
+    allKeys.forEach(function(elem){
+      const order = JSON.parse(localStorage.getItem(elem));
+      ordersContainer.innerHTML += 
+      `
+      <div class="choice">
+            <span class="q">Q: ${order.q}.
+                <span class="choice-name">${order.name}</span>
             </span>
            
-            <span class="choice-price">${item[1]}
+            <span class="choice-price">${order.price}
                <i class="fa-solid fa-circle-minus"></i> 
             </span>
             
         </div>
-        `;
-    });
-    displayOrder = displayOrder.join('');
-    orders.innerHTML = displayOrder; */
+      `
+
+     })
+     
+
   }
-
-  
-  /* let order = new Orders(1,"test","$15.99");
-  order.setQ=2;
-  let orderstring = JSON.stringify(order);
-  localStorage.setItem("lastname", orderstring);
-
-  let orderobj = JSON.parse(localStorage.getItem("lastname"));
-  console.log(orderobj.name); */
