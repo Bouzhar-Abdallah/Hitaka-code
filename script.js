@@ -260,7 +260,7 @@ const menu = [
 
             }
             else {
-                let newOrder = new Orders(this.id,1,elem.querySelector('.infos .plat-name').textContent,elem.querySelector('.infos .plat-price').textContent);
+                let newOrder = new Orders(this.id,1,elem.querySelector('.infos .plat-name').textContent,elem.querySelector('.infos .plat-price').textContent.slice(2));
                 localStorage.setItem(this.id, JSON.stringify(newOrder));
 
             }
@@ -285,7 +285,7 @@ const menu = [
                 <span class="choice-name">${order.name}</span>
             </span>
            
-            <span class="choice-price">${order.price}
+            <span class="choice-price">$  ${order.price*order.q}
                <i class="fa-solid fa-circle-minus"></i> 
             </span>
             
