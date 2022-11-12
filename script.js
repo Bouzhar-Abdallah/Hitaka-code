@@ -254,7 +254,7 @@ const menu = [
         elem.addEventListener('click', function(){
           let KEY = 'order_'+this.id;
             if(Object.keys(localStorage).includes(KEY)){
-              console.log(KEY);
+
                 let existantOrder = JSON.parse(localStorage.getItem(KEY));
                 existantOrder.q=existantOrder.q+1;
 
@@ -324,5 +324,16 @@ const menu = [
       })
 
    }
+   updateTotalPrice(allKeys);
+  }
 
+  function updateTotalPrice(allKeys){
+    let TotalPriceE=document.querySelector('.price');
+    let totalPrice=0;
+    for(let KEY of allKeys){
+      let order = JSON.parse(localStorage.getItem(KEY));
+      totalPrice+= order.q * order.price;
+     }
+     TotalPriceE.innerHTML ='$';
+     TotalPriceE.innerHTML += totalPrice;
   }

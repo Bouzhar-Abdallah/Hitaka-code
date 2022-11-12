@@ -96,7 +96,7 @@ body{
     top: 100px;
     height: fit-content;
     width: fit-content;
-    min-width: 200px;
+    min-width: 250px;
     z-index: 1;
     border: 2px solid ;
 }
@@ -135,9 +135,23 @@ body{
     background-color: #EA3449;
     color: var(--White);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+}
+.order-footer button{
+    height: 100%;
+    border: 3px solid #EA3449;
+    padding: 0 5px;
+    background-color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+.order-footer button:hover{
+    background-color: yellow;
+}
+.order-footer p {
+    margin: 0 auto;
 }
 .products{
     /* background-color: #fff; */
@@ -194,6 +208,10 @@ body{
 :is(.product:hover) .fa-solid{
     color: yellow;
 }
+:is(.choice:hover) .fa-solid{
+    color:#EA3449;
+}
+
 footer {
     position: absolute;
     bottom: 0;
