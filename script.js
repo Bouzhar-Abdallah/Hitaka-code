@@ -253,7 +253,8 @@ const menu = [
        listedProducts.forEach(function(elem){
         elem.addEventListener('click', function(){
           let KEY = 'order_'+this.id;
-            if(allKeys.includes(KEY)){
+            if(Object.keys(localStorage).includes(KEY)){
+              console.log(KEY);
                 let existantOrder = JSON.parse(localStorage.getItem(KEY));
                 existantOrder.q=existantOrder.q+1;
 
