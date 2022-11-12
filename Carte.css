@@ -155,7 +155,7 @@ body{
 }
 .products{
     /* background-color: #fff; */
-    border:10px solid var(--White);
+    /* border:10px solid var(--White); */
     margin-top: 20px;
     position: fixed;
     overflow:scroll;
