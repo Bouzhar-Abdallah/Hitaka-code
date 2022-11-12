@@ -211,18 +211,18 @@ const menu = [
 
     class Orders {
         constructor(_id,_q,_name,_price){
-            this.id = _id;
+            this.id ='order_'+ _id;
             this.q  = _q;
             this.name = _name;
             this.price = _price;
         }
-        set setQ(_q){
+       /*  set setQ(_q){
             this.q=_q;
-        }
+        } */
 
-        increment(){
+        incrementQ(){
             this.q=this.q+1;
-        }
+        } 
       }
     
 
@@ -252,16 +252,18 @@ const menu = [
        
        listedProducts.forEach(function(elem){
         elem.addEventListener('click', function(){
-          
-            if(allKeys.includes(this.id)){
-                let existantOrder = JSON.parse(localStorage.getItem(this.id));
+          let KEY = 'order_'+this.id;
+            if(allKeys.includes(KEY)){
+                let existantOrder = JSON.parse(localStorage.getItem(KEY));
                 existantOrder.q=existantOrder.q+1;
-                localStorage.setItem(this.id, JSON.stringify(existantOrder));
+
+                localStorage.setItem(KEY, JSON.stringify(existantOrder));
 
             }
             else {
                 let newOrder = new Orders(this.id,1,elem.querySelector('.infos .plat-name').textContent,elem.querySelector('.infos .plat-price').textContent.slice(2));
-                localStorage.setItem(this.id, JSON.stringify(newOrder));
+                let KEY = 'order_' + this.id;
+                localStorage.setItem(KEY, JSON.stringify(newOrder));
 
             }
             allKeys = Object.keys(localStorage);
@@ -280,7 +282,7 @@ const menu = [
       const order = JSON.parse(localStorage.getItem(elem));
       ordersContainer.innerHTML += 
       `
-      <div class="choice">
+      <div class="choice" id="${order.id}">
             <span class="q">Q: ${order.q}.
                 <span class="choice-name">${order.name}</span>
             </span>
@@ -294,5 +296,32 @@ const menu = [
 
      })
      
+     if(ordersContainer.firstChild){
+      let listedOrders = ordersContainer.querySelectorAll('.choice');
+      
+      listedOrders.forEach(function(elem){
+       elem.addEventListener('click', function(){
+        let existantOrder = JSON.parse(localStorage.getItem(this.id));
+        
+           if(existantOrder.q>1){
+                let existantOrder = JSON.parse(localStorage.getItem(this.id));
+               existantOrder.q=existantOrder.q-1;
+
+               localStorage.setItem(this.id, JSON.stringify(existantOrder));
+               
+           }
+           else {
+          
+              localStorage.removeItem(this.id);
+              
+           }
+           allKeys = Object.keys(localStorage);
+           displayOrders(allKeys); 
+     
+       });
+
+      })
+
+   }
 
   }
