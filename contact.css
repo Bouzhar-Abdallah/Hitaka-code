@@ -87,6 +87,7 @@ button span{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     width: 50vw;
     
     padding: 0 20px;
@@ -117,6 +118,7 @@ footer {
   }
   fieldset{
     border: none;
+    width: 100%;
   }
   input{
     width: 50%;
@@ -128,8 +130,33 @@ footer {
   }
   label{
     font-weight: bold;
+    color: #0D1F2D;
   }
   button:hover{
     color: #fff;
     background-color: #0D1F2D;
+  }
+
+  @media screen and (max-width: 700px) {
+    .form-holder{
+        width: 80vw;
+    
+    }
+  }
+  @media screen and (max-width: 375px) {
+    textarea{
+        height: 150px;
+        width: auto;
+    }
+    .input_line{
+        flex-direction: column;
+        gap: 5px;
+    }
+    input{
+        height: 30px;
+        width: auto;
+    }
+    {
+        width: 80%;
+    }
   }
