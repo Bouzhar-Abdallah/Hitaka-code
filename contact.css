@@ -42,7 +42,7 @@ nav{
 }
 ul{
     display: flex; 
-    margin: 0 50px;
+
 }
 nav ul li{
     list-style: none;
@@ -62,60 +62,18 @@ body{
     background-image: linear-gradient(180deg,rgba(0,0,0,1),
     rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg); 
     background-size: cover;
-    height: min-content;   
-} 
-
-main{
-    /* padding: 80px; */
-    padding-top: 50px;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: fit-content;
-    height: fit-content;
-
-   
 } 
-.input-line{
-    display: flex;
-    flex-direction: column;
-    width: max-content;
-    background-color: var(--ROUJE);
-}
-.infos{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 5px 30px;
-}
-.message{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    
-    padding: 5px 30px;
-}
-label{
-    margin: 10px;
-    color: var(--White);
 
-}
-input,textarea{
-    width: 300px;
 
-}
-input{
-    height: 30px;
-    border: none;
-}
-fieldset{
-    border: none;
-}
 button{
     width: fit-content;
     align-self: center;
-    margin: 20px;
     padding: 8px 40px;
+    margin: 20px 0;
     border: none;
     background-color: var(--White);
     border-radius: 10px;
@@ -125,13 +83,19 @@ button span{
 }
 
 .form-holder{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-left: 100px;
+    background-color: #EA3449;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50vw;
+    
+    padding: 0 20px;
+
 }
 
 footer {
-
+    position: absolute;
+    bottom: 0;
     width: 100%;
     height: 2rem;  
     display: flex;
@@ -143,4 +107,29 @@ footer {
   footer i{
     color: var(--White);
     cursor: pointer;
+  }
+
+  .input_line{
+    display: flex;
+    justify-content:flex-end;
+    gap: 50px;
+    margin: 20px 0;
+  }
+  fieldset{
+    border: none;
+  }
+  input{
+    width: 50%;
+    height: 35px;
+  }
+  textarea{
+    width: 50%;
+    height: 250px;
+  }
+  label{
+    font-weight: bold;
+  }
+  button:hover{
+    color: #fff;
+    background-color: #0D1F2D;
   }

@@ -18,18 +18,17 @@ h1,h2,h3,h4,p{
     width: 70px;
 }
 nav{
-    position: fixed;
-    top: 0;
+
     display: flex;
     justify-content: space-between;
     place-items: center;
     width: 100%;
     height: 70px;
-    z-index: 1;
+
 }
 ul{
     display: flex; 
-    margin: 0 50px;
+
 }
 nav ul li{
     list-style: none;
@@ -45,20 +44,26 @@ nav ul li{
     color: white;
 }
 
-
-body{
+.background{
+    top: 0;
+    position: absolute;
     background-image: linear-gradient(180deg,rgba(0,0,0,1),
     rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg); 
-    
+    height: 100vh;
+    width: 100vw;
     background-size: cover;
-    
-}  
+    background-position: center;
+    z-index: -5;
+}
+
 
 /***** Body****/
 
 main{
-    position: relative;
-    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 span{
@@ -70,7 +75,10 @@ span{
 } */
 
 .home{
-    padding-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
     padding: 100px 50px;
 }
 
@@ -109,7 +117,7 @@ span{
 }
 
 footer {
-    position: absolute;
+
     bottom: 0;
     width: 100%;
     height: 2rem;  
