@@ -235,14 +235,16 @@ const menu = [
         
         return `
         <div class="product" id="${item.id}">
-        <div class="picture"><img src=${item.img} alt=${item.img}></div>
-        <div class="infos">
-            <p class="plat-name">${item.title}</p>
-            <p class="plat-desc">${item.desc}</p>
-            <p class="plat-price">$ ${item.price}</p>
+          <div class="picture"><img src=${item.img} alt=${item.img}></div>
+          <div class="infos">
+              <p class="plat-name">${item.category}: ${item.title}</p>
+              <p class="plat-desc">${item.desc}</p>
+              <div class="product_footer">
+          <p class="plat-price">$ ${item.price}</p>
+          <i class="fa-solid fa-circle-plus"></i></div>
+          </div>
+          
         </div>
-        <div class="button"><i class="fa-solid fa-circle-plus"></i></div>
-    </div>
         `;
     });
     displayMenu = displayMenu.join('');

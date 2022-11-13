@@ -40,23 +40,18 @@ h1,h2,h3,h4,p{
     width: 70px;
 }
 
-body{
-    height: 100vh;
-    width: 100vw;
-}
 
 nav{
-    position: fixed;
+    position: sticky;
     top: 0;
     display: flex;
     justify-content: space-between;
     place-items: center;
-    width: 100%;
-    height: 70px;
+    height: 9%;
 }
 ul{
     display: flex; 
-    margin: 0 50px;
+
 }
 nav ul li{
     list-style: none;
@@ -71,157 +66,100 @@ nav ul li{
     font-size: 16px;
     color: white;
 }
-body{
+.background{
     background-image: linear-gradient(180deg,rgba(0,0,0,1),
     rgba(0,0,0,0.5)),url(./BGs/possible\ bg.jpg); 
-    
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
-    
-}  
-.filtre{
-    position: absolute;
-    margin-top: 80px;
-}
-
-.filtre-button i{
-   width: 50px;
-   height: 50px;
-    
-}  
-
-.order{
-    background-color: var(--White);
     position: fixed;
-    right: 5vw;
-    top: 100px;
-    height: fit-content;
-    width: fit-content;
-    min-width: 250px;
-    z-index: 1;
-    border: 2px solid ;
+    z-index: -1;
+    top: 0;
+    left: 0;
 }
-
-.order .choice{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px ;
-    padding: 5px 0;
-    border: 1px solid var(--blue);
-    cursor: pointer;
-}
-.order .choice i{
-    font-size: inherit;
-}
-.choice span,i{
-    margin: 0 5px;
-}
-.order-header{
-    background-color: #EA3449;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    color: var(--White);
-}
-.order-footer{
-    bottom: 0;
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: #EA3449;
-    color: var(--White);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
-.order-footer button{
-    height: 100%;
-    border: 3px solid #EA3449;
-    padding: 0 5px;
-    background-color: white;
-    font-weight: 700;
-    cursor: pointer;
-}
-.order-footer button:hover{
-    background-color: yellow;
-}
-.order-footer p {
-    margin: 0 auto;
-}
-.products{
-    /* background-color: #fff; */
-    /* border:10px solid var(--White); */
-    margin-top: 20px;
-    position: fixed;
-    overflow:scroll;
-    overflow-x: hidden;
-    left: 50px;
-    top: 100px;
-    height: 80%;
-    width: 500px;
-}
-
-.product{
-    display: flex;
-    /* display: none; */
-    background-color: var(--ROUJE);
-    border-radius: 20px 0px 0px 20px ;
-    margin-top: 20px;
-    height: 130px;
-    padding-right: 20px;
-    cursor: pointer;
-}
-
-.product .plat-desc{
-    font-size: 12px;
-}
-
-.picture img{
-    border-radius: 20px 0px 0px 20px ;
-    height: 130px;
-    width: 150px;
-    display: inline-block;
-}
-.infos{
-    background-color: #EA3449;
-    margin: 10px;
-    width: 300px;
-    height: max;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.button{
-    background-color: none;
-    float: right;
-    margin: auto;
-}
-.fa-solid{
-    color: var();
-    font-size: 50px;
-}
-:is(.product:hover) .fa-solid{
-    color: yellow;
-}
-:is(.choice:hover) .fa-solid{
-    color:#EA3449;
-}
-
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
-    height: 2rem;  
+    width: inherit;
+    height: 3%;  
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 5px;
+    background-color: #EA3449;
   }
   footer i{
     color: var(--White);
     cursor: pointer;
   }
+
+  .up{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: inherit;
+    height: 3%;
+    background-color: #555;
+  }
+main{
+    position: fixed;
+    overflow-y:scroll;
+    height: 88%;
+    width: inherit;
+
+}
+.order{
+  display: none;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+.products{
+  margin-top: 3vh;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.product{
+  width: min-content;
+  background-color: #EA3449;
+  margin: 10px;
+}
+.picture{
+  padding: 5px;
+  width: fit-content;
+  margin: 0 auto;
+}
+.picture img{
+  width: 200px;
+}
+
+.infos{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.product_footer{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+
+.product_footer .fa-solid{
+  font-size: 50px;
+}
+
+.plat-name{
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.plat-desc{
+  font-size: 15px;
+}
