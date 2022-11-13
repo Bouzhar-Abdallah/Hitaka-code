@@ -156,7 +156,31 @@ footer {
         height: 30px;
         width: auto;
     }
-    {
+    fieldset{
         width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    nav{
+        flex-direction: row-reverse;
+    }
+    nav ul{
+        display: flex;
+        
+        position: absolute;
+        top: 30px;
+        padding: 0 0;
+        background-color: #0D1F2D;
+    }
+    
+    li .fa-bars{
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        z-index: 5;
+        height: 100px;
+        color: #EA3449;
+        font-size: 40px;
     }
   }
