@@ -168,6 +168,15 @@ const menu = [
   const products = document.querySelector('.products');
   const ordersContainer = document.querySelector('.orders');
   const filterSelect = document.querySelector('.filtre');
+  const ordersCount = document.querySelector('.choice_count');
+  const cart=document.querySelector('.cart');
+  
+  cart.addEventListener('click', function(){
+    let element = document.querySelector(".order");
+    element.classList.toggle("hide_order");
+  });
+
+
   let allKeys = Object.keys(localStorage);
 
   //load items
@@ -175,7 +184,7 @@ const menu = [
     displayMenuItems(menu);
     
     displayOrders(allKeys);
-
+    ordersCount.innerHTML=allKeys.length;
   
     const categories = menu.reduce(function(values,item){
         if(!values.includes(item.category)){
@@ -237,7 +246,10 @@ const menu = [
         <div class="product" id="${item.id}">
           <div class="picture"><img src=${item.img} alt=${item.img}></div>
           <div class="infos">
-              <p class="plat-name">${item.category}: ${item.title}</p>
+          <div>
+              <p class="category">${item.category}: </p>
+              <p class="plat-name">${item.title}</p>
+              </div>
               <p class="plat-desc">${item.desc}</p>
               <div class="product_footer">
           <p class="plat-price">$ ${item.price}</p>
@@ -270,7 +282,8 @@ const menu = [
 
             }
             allKeys = Object.keys(localStorage);
-            displayOrders(allKeys); 
+            displayOrders(allKeys);
+            ordersCount.innerHTML=allKeys.length; 
         /* ordersUpdateDisplay(allKeys);  */ 
         });
 
@@ -328,8 +341,9 @@ const menu = [
    }
    updateTotalPrice(allKeys);
   }
-
+  
   function updateTotalPrice(allKeys){
+
     let TotalPriceE=document.querySelector('.price');
     let totalPrice=0;
     for(let KEY of allKeys){

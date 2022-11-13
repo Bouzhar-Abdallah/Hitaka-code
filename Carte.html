@@ -32,23 +32,27 @@
     
     <main>
         <section class="up">
-            <select class="filtre-input filtre" name="referrer" id="filter">
-            </select>
-            <div class="carte">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <div class="order">
-                    <div class="order-header">Order</div>
-                    <div class="orders"></div>
-                    
-                    <div class="order-footer">
-                        <p>total price :</p>
-                        <p class="price"> prix</p>
-                        <button>submit</button>
-                    </div>
+            <div class="order hide_order">
+                <div class="orders"></div>
+                
+                <div class="order-footer">
+                    <p>total price :</p>
+                    <p class="price"> prix</p>
+                    <button>submit</button>
                 </div>
             </div>
+            <select class="filtre-input filtre" name="referrer" id="filter">
+            </select>
+            <div class="cart">
+                <div class="cart_icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="choice_count"></p>
+                </div>
+                
+            </div>
+            
         </section>
-
+        
         <div class="products" >
             <div class="product" id="${item.id}">
                 <div class="picture"><img src=${item.img} alt=${item.img}></div>
