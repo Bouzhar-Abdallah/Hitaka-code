@@ -131,7 +131,7 @@ body{
   width: min-content;
   background-color: #EA3449;
   margin: 10px;
- 
+  cursor: pointer;
 }
 .picture{
   padding: 5px;
@@ -184,6 +184,7 @@ body{
 
 .cart{
   padding: 5px;
+  cursor: pointer;
 }
 
 .cart_icon{
@@ -212,6 +213,8 @@ body{
   align-items: center;
   padding: 5px 0;
   cursor: pointer;
+  font-size: 10px;
+  font-weight: 500;
 }
 .order .choice i{
   font-size: inherit;
@@ -242,8 +245,6 @@ body{
   cursor: pointer;
 }
 
-
-
 .order{
   background-color: var(--White);
   position: absolute;
@@ -265,3 +266,16 @@ body{
   z-index: -5;
   transition: 300ms ease-in;
   }
+
+:is(.product:hover) .fa-solid{
+  color: yellow;
+}
+
+:is(.choice:hover) .fa-solid{
+  color: #EA3449;
+}
+.choice:hover{
+  background-color: rgb(221, 220, 220);
+  font-size: 12px;
+  font-weight: 600;
+}
