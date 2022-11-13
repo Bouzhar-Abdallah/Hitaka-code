@@ -101,10 +101,12 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: inherit;
+    width: 100vw;
     height: 5vh;
     background-color: black;
     z-index: 5;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
 main{
     position: fixed;
@@ -278,4 +280,8 @@ body{
   background-color: rgb(221, 220, 220);
   font-size: 12px;
   font-weight: 600;
+}
+.filtre{
+  margin-right: auto;
+  margin-left: 10px;
 }

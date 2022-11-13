@@ -303,7 +303,7 @@ const menu = [
                 <span class="choice-name">${order.name}</span>
             </span>
            
-            <span class="choice-price">$  ${order.price*order.q}
+            <span class="choice-price">$  ${(order.price*order.q).toFixed(2)}
                <i class="fa-solid fa-circle-minus"></i> 
             </span>
             
@@ -351,5 +351,5 @@ const menu = [
       totalPrice+= order.q * order.price;
      }
      TotalPriceE.innerHTML ='$';
-     TotalPriceE.innerHTML += totalPrice;
+     TotalPriceE.innerHTML += totalPrice.toFixed(2);
   }
