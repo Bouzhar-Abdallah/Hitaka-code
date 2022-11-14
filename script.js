@@ -5,7 +5,7 @@ const menu = [
       category: "Sushi",
       price: 15.99,
       img: "./images/item-1.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const menu = [
       category: "Sushi",
       price: 15.99,
       img: "./images/item-2.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ const menu = [
       category: "Sushi",
       price: 35.99,
       img: "./images/item-3.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-4.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-5.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-6.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-7.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-8.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-9.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-10.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-11.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 12,
@@ -93,7 +93,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-12.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 13,
@@ -101,7 +101,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-13.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 14,
@@ -109,7 +109,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-14.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-15.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-16.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 17,
@@ -133,7 +133,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-17.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-18.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-19.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 20,
@@ -157,9 +157,9 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-20.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
-    
+
     
     
   ];
@@ -234,8 +234,6 @@ const menu = [
         } 
       }
     
-
-
 
 
   function displayMenuItems(menuItems){

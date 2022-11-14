@@ -89,7 +89,7 @@ button span{
     justify-content: space-around;
     align-items: center;
     width: 50vw;
-    
+    height:fit-content;
     padding: 0 20px;
 
 }
@@ -113,8 +113,8 @@ footer {
   .input_line{
     display: flex;
     justify-content:flex-end;
-    gap: 50px;
-    margin: 20px 0;
+    gap: 20px;
+    margin: 10px 0;
   }
   fieldset{
     border: none;
@@ -122,11 +122,11 @@ footer {
   }
   input{
     width: 50%;
-    height: 35px;
+    height: 25px;
   }
   textarea{
     width: 50%;
-    height: 250px;
+    height: 150px;
   }
   label{
     font-weight: bold;
@@ -145,19 +145,25 @@ footer {
   }
   @media screen and (max-width: 375px) {
     textarea{
-        height: 150px;
+        height: 80px;
         width: auto;
     }
     .input_line{
         flex-direction: column;
         gap: 5px;
+        font-size: 10px;
     }
     input{
-        height: 30px;
+        height: 20px;
         width: auto;
     }
     fieldset{
         width: 80%;
+    }
+    button{
+        padding: 2px 5px;
+        font-size: 12px;
+        margin: 10px;
     }
   }
 
