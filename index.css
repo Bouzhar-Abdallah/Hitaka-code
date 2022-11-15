@@ -30,7 +30,7 @@ ul{
     display: flex; 
 
 }
-nav ul li{
+nav  li{
     list-style: none;
     margin: 0 20px;
 }
@@ -150,3 +150,35 @@ span {
     font-size: 30px;
    }
 }
+
+@media screen and (max-width: 500px) {
+    nav{
+        flex-direction: row-reverse;
+    }
+    nav ul{
+        
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100px;
+        background-color: #0D1F2D;
+        transition: all 200ms ease-in-out;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    
+    li .fa-bars{
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        z-index: 5;
+        
+        color: white;
+        font-size: 40px;
+    }
+    .hide{
+        left: 0;
+        transition: all 200ms ease-in-out;
+    }
+  }

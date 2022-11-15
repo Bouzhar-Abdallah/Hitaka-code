@@ -175,7 +175,7 @@ const menu = [
     let element = document.querySelector(".order");
     element.classList.toggle("hide_order");
   });
-
+  
 
   let allKeys = Object.keys(localStorage);
 
