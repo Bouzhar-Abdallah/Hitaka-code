@@ -185,13 +185,16 @@ const menu = [
     
     displayOrders(allKeys);
     ordersCount.innerHTML=allKeys.length;
-  
+
+    //search for unique cetegories in menu
     const categories = menu.reduce(function(values,item){
         if(!values.includes(item.category)){
             values.push(item.category);
         }
        return values
     },['all']);
+
+    //add uniaue categories to filter options
     const categoriesSelect = categories.map(function(category){
         return `
         <option class="select-control">${category}</option>
@@ -218,6 +221,9 @@ const menu = [
         }
     });
 
+
+
+
     class Orders {
         constructor(_id,_q,_name,_price){
             this.id ='order_'+ _id;
@@ -229,9 +235,9 @@ const menu = [
             this.q=_q;
         } */
 
-        incrementQ(){
+     /*    incrementQ(){
             this.q=this.q+1;
-        } 
+        }  */
       }
     
 
@@ -320,7 +326,7 @@ const menu = [
            if(existantOrder.q>1){
                 let existantOrder = JSON.parse(localStorage.getItem(this.id));
                existantOrder.q=existantOrder.q-1;
-
+               
                localStorage.setItem(this.id, JSON.stringify(existantOrder));
                
            }
@@ -330,7 +336,8 @@ const menu = [
               
            }
            allKeys = Object.keys(localStorage);
-           displayOrders(allKeys); 
+          ordersCount.innerHTML=allKeys.length;
+          displayOrders(allKeys); 
      
        });
 

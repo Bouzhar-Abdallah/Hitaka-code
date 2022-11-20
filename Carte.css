@@ -127,7 +127,7 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
+  gap: 20px;
 }
 .product{
   width: min-content;
@@ -182,7 +182,7 @@ body{
 .plat-desc{
   font-size: 15px;
   padding: 10px;
-  border:1px solid #0D1F2D;
+  
 }
 .plat-price{
   /* margin: 0 auto; */
@@ -335,5 +335,19 @@ body{
   .hide{
       left: 0;
       transition: all 200ms ease-in-out;
+  }
+}
+@media screen and (max-width: 340px) {
+
+  li .fa-bars{
+      font-size: 30px;
+  }
+  .up p{
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .logo{
+    height: 50px;
+    width: auto;
   }
 }

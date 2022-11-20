@@ -62,7 +62,7 @@ nav ul li{
 
 body{
     background-image: linear-gradient(180deg,rgba(0,0,0,1),
-    rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg); 
+    rgba(0,0,0,0.5)),url(./BGs/contact.jpg); 
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -198,6 +198,20 @@ footer {
     .hide{
         left: 0;
         transition: all 200ms ease-in-out;
+    }
+  }
+  @media screen and (max-width: 340px) {
+
+    li .fa-bars{
+        font-size: 30px;
+    }
+    .up p{
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .logo{
+      height: 50px;
+      width: auto;
     }
   }
   
