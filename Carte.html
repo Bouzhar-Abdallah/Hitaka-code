@@ -13,10 +13,12 @@
 <script src="https://kit.fontawesome.com/a26b51a86d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="background"></div>
     <nav class="navigation-bar">
         <a href="index.html"><img class="logo" src="./icons/logo.png"></a>
         <div class="nav-links">
-            <ul>
+            <li><i class="fa-solid fa-bars" id="fa-bars"></i></li>
+            <ul class="ul hide">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="Carte.html">Carte</a></li>
                 <li><a href="apropos.html">Apropos</a></li>
@@ -24,48 +26,47 @@
             </ul>
         </div>
     </nav>
-</div>
 
-
-
-
-        <select class="filtre-input filtre" name="referrer" id="filter">
-          <!-- <option class="select-control">all</option>
-          <option class="select-control" data-id="Obento">Obento</option>
-          <option class="select-control" data-id="Salade">Salade</option>
-          <option class="select-control" data-id="Sushi">Sushi</option> -->
-        </select>
-
-
- 
-    <div class="order">
-        <div class="order-header">Order</div>
-        <div class="orders">
-        
-        
-        
-        </div>
-        
-    <div class="order-footer">
-        <p>total price :</p>
-        <p class="price"> prix</p>
-        <button>submit</button>
-    </div>
-  </div>
-  <main>
-  <div class="products" >
    
-  </div>
+        
+    
+    
+    <main>
+        <section class="up">
+            <div class="order ">
+                <div class="orders"></div>
+                
+                <div class="order-footer">
+                    <p>total price :</p>
+                    <p class="price"> prix</p>
+                    <button>submit</button>
+                </div>
+            </div>
+            <p>selectioner par categorie:</p>
+            <select class="filtre-input filtre" name="referrer" id="filter">
+            </select>
+            <div class="cart">
+                <div class="cart_icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p class="choice_count"></p>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <div class="products" >
+            
+        </div>
 
-
-
-  <footer>
-    <i class="fa-brands fa-square-facebook"></i>
-    <i class="fa-brands fa-square-twitter"></i>
-    <i class="fa-brands fa-square-instagram"></i>
-    <i class="fa-brands fa-square-snapchat"></i>
-</footer>
-</main>
+    </main>
+    <footer>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-snapchat"></i>
+    </footer>
 </body>
 </html>
 <script src="script.js"></script>
+<script src="menu.js"></script>

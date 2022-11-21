@@ -5,7 +5,7 @@ const menu = [
       category: "Sushi",
       price: 15.99,
       img: "./images/item-1.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 2,
@@ -13,7 +13,7 @@ const menu = [
       category: "Sushi",
       price: 15.99,
       img: "./images/item-2.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 3,
@@ -21,7 +21,7 @@ const menu = [
       category: "Sushi",
       price: 35.99,
       img: "./images/item-3.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 4,
@@ -29,7 +29,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-4.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 5,
@@ -37,7 +37,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-5.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 6,
@@ -45,7 +45,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-6.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 7,
@@ -53,7 +53,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-7.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 8,
@@ -61,7 +61,7 @@ const menu = [
       category: "Sushi",
       price: 5.99,
       img: "./images/item-8.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 9,
@@ -69,7 +69,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-9.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 10,
@@ -77,7 +77,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-10.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 11,
@@ -85,7 +85,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-11.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 12,
@@ -93,7 +93,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-12.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 13,
@@ -101,7 +101,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-13.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 14,
@@ -109,7 +109,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-14.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 15,
@@ -117,7 +117,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-15.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 16,
@@ -125,7 +125,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-16.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 17,
@@ -133,7 +133,7 @@ const menu = [
       category: "Salade",
       price: 5.99,
       img: "./images/item-17.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 18,
@@ -141,7 +141,7 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-18.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 19,
@@ -149,7 +149,7 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-19.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
     {
       id: 20,
@@ -157,9 +157,9 @@ const menu = [
       category: "Obento",
       price: 5.99,
       img: "./images/item-20.jpg",
-      desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan copper mug whatever cold-pressed `,
+      desc: `hammock freegan copper mug whatever cold-pressed `,
     },
-    
+
     
     
   ];
@@ -168,6 +168,15 @@ const menu = [
   const products = document.querySelector('.products');
   const ordersContainer = document.querySelector('.orders');
   const filterSelect = document.querySelector('.filtre');
+  const ordersCount = document.querySelector('.choice_count');
+  const cart=document.querySelector('.cart');
+  
+  cart.addEventListener('click', function(){
+    let element = document.querySelector(".order");
+    element.classList.toggle("hide_order");
+  });
+  
+
   let allKeys = Object.keys(localStorage);
 
   //load items
@@ -175,7 +184,7 @@ const menu = [
     displayMenuItems(menu);
     
     displayOrders(allKeys);
-
+    ordersCount.innerHTML=allKeys.length;
   
     const categories = menu.reduce(function(values,item){
         if(!values.includes(item.category)){
@@ -227,22 +236,25 @@ const menu = [
     
 
 
-
-
   function displayMenuItems(menuItems){
 
     let displayMenu = menuItems.map(function(item){
         
         return `
         <div class="product" id="${item.id}">
-        <div class="picture"><img src=${item.img} alt=${item.img}></div>
-        <div class="infos">
-            <p class="plat-name">${item.title}</p>
-            <p class="plat-desc">${item.desc}</p>
-            <p class="plat-price">$ ${item.price}</p>
+          <div class="picture"><img src=${item.img} alt=${item.img}></div>
+          <div class="infos">
+          <div>
+              <p class="category">${item.category}: </p>
+              <p class="plat-name">${item.title}</p>
+              </div>
+              <p class="plat-desc">${item.desc}</p>
+              <div class="product_footer">
+          <p class="plat-price">$ ${item.price}</p>
+          <i class="fa-solid fa-circle-plus"></i></div>
+          </div>
+          
         </div>
-        <div class="button"><i class="fa-solid fa-circle-plus"></i></div>
-    </div>
         `;
     });
     displayMenu = displayMenu.join('');
@@ -268,7 +280,8 @@ const menu = [
 
             }
             allKeys = Object.keys(localStorage);
-            displayOrders(allKeys); 
+            displayOrders(allKeys);
+            ordersCount.innerHTML=allKeys.length; 
         /* ordersUpdateDisplay(allKeys);  */ 
         });
 
@@ -288,7 +301,7 @@ const menu = [
                 <span class="choice-name">${order.name}</span>
             </span>
            
-            <span class="choice-price">$  ${order.price*order.q}
+            <span class="choice-price">$${' '+(order.price*order.q).toFixed(2)}
                <i class="fa-solid fa-circle-minus"></i> 
             </span>
             
@@ -326,14 +339,15 @@ const menu = [
    }
    updateTotalPrice(allKeys);
   }
-
+  
   function updateTotalPrice(allKeys){
+
     let TotalPriceE=document.querySelector('.price');
     let totalPrice=0;
     for(let KEY of allKeys){
       let order = JSON.parse(localStorage.getItem(KEY));
       totalPrice+= order.q * order.price;
      }
-     TotalPriceE.innerHTML ='$';
-     TotalPriceE.innerHTML += totalPrice;
+     TotalPriceE.innerHTML ='$ ';
+     TotalPriceE.innerHTML += totalPrice.toFixed(2);
   }

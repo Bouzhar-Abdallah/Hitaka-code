@@ -12,6 +12,9 @@
 h1,h2,h3,h4,p{
     color: var(--White);
 }
+.fa-bars{
+    display: none;
+}
 p{
     font-weight: 200;
     font-size: 14px;
@@ -42,9 +45,8 @@ nav{
 }
 ul{
     display: flex; 
-    margin: 0 50px;
 }
-nav ul li{
+nav li{
     list-style: none;
     margin: 0 20px;
 }
@@ -81,12 +83,13 @@ main{
 }
 .introduction{
     display: flex;
-    height: 450px;
+    height: fit-content;
 background-color: aqua;
 }
 .phylosophy{
     background-color: var(--ROUJE);
     width: 100%;
+    height: fit-content;
     padding: 40px 20px;
 }
 .phylosophy :nth-child(3){
@@ -95,9 +98,10 @@ background-color: aqua;
 main .introduction img{
     height: 450px;
     width: auto;
-
-   /*  float:inline-end; */
+    float: right;
+    margin: 0 20px;
 }
+
 .introduction h3{
     color: var(--White);
     font-size: 30px;
@@ -113,6 +117,8 @@ main .introduction img{
 
 .offers{
     display: flex;
+    gap: 10px;
+
 }
 .offer,.adresse{
     padding: 10px 2px;
@@ -122,7 +128,7 @@ main .introduction img{
 }
 .adresse{
     margin: 0 5%;
-    width: 25%;
+
 }
 .quote{
     text-align: center;
@@ -141,7 +147,8 @@ h3,h4{
 }
 .adresses{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 10px;
 }
 footer {
     
@@ -162,4 +169,50 @@ footer {
         
     }
     
+  }
+  @media screen and (max-width:600px) {
+    
+    main{
+        padding: 20px;
+        margin-top: 100px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    
+    .offers, .adresses{
+        flex-direction: column;
+     }
+     .adresses{
+         justify-content: unset;
+     }
+  }
+  @media screen and (max-width: 500px) {
+    nav{
+        flex-direction: row-reverse;
+    }
+    nav ul{
+        
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100px;
+        background-color: #0D1F2D;
+        transition: all 200ms ease-in-out;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    
+    li .fa-bars{
+        background-color: transparent;
+        position: absolute;
+        top: 20px;
+        z-index: 5;
+        color: white;
+        font-size: 40px;
+    }
+    .hide{
+        left: 0;
+        transition: all 200ms ease-in-out;
+    }
   }
