@@ -216,3 +216,18 @@ footer {
         transition: all 200ms ease-in-out;
     }
   }
+
+  @media screen and (max-width: 340px) {
+
+    li .fa-bars{
+        font-size: 30px;
+    }
+    .up p{
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .logo{
+      height: 50px;
+      width: auto;
+    }
+  }

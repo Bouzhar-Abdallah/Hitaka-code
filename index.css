@@ -47,8 +47,9 @@ nav ul li{
 .background{
     top: 0;
     position: absolute;
-    background-image: linear-gradient(180deg,rgba(0,0,0,1),
+    background-image: linear-gradient(rgba(0,0,0,1),
     rgba(0,0,0,0.5)),url(./BGs/home-bg.jpg); 
+    
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -180,5 +181,19 @@ span {
     .hide{
         left: 0;
         transition: all 200ms ease-in-out;
+    }
+  }
+  @media screen and (max-width: 340px) {
+
+    li .fa-bars{
+        font-size: 30px;
+    }
+    .up p{
+      font-size: 10px;
+      font-weight: bold;
+    }
+    .logo{
+      height: 50px;
+      width: auto;
     }
   }
