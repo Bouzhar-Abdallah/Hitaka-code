@@ -1,7 +1,7 @@
 const menu = [
     {
       id: 1,
-      title: "pancakes",
+      title: "Salade",
       category: "Sushi",
       price: 15.99,
       img: "./images/item-1.jpg",
@@ -25,7 +25,7 @@ const menu = [
     },
     {
       id: 4,
-      title: "pancakes",
+      title: "Salade",
       category: "Sushi",
       price: 5.99,
       img: "./images/item-4.jpg",
@@ -33,7 +33,7 @@ const menu = [
     },
     {
       id: 5,
-      title: "pancakes",
+      title: "Salade",
       category: "Sushi",
       price: 5.99,
       img: "./images/item-5.jpg",
@@ -41,7 +41,7 @@ const menu = [
     },
     {
       id: 6,
-      title: "pancakes",
+      title: "Salade",
       category: "Sushi",
       price: 5.99,
       img: "./images/item-6.jpg",
@@ -49,7 +49,7 @@ const menu = [
     },
     {
       id: 7,
-      title: "pancakes",
+      title: "Salade",
       category: "Sushi",
       price: 5.99,
       img: "./images/item-7.jpg",
@@ -57,7 +57,7 @@ const menu = [
     },
     {
       id: 8,
-      title: "pancakes",
+      title: "Sushi",
       category: "Sushi",
       price: 5.99,
       img: "./images/item-8.jpg",
@@ -65,7 +65,7 @@ const menu = [
     },
     {
       id: 9,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-9.jpg",
@@ -73,7 +73,7 @@ const menu = [
     },
     {
       id: 10,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-10.jpg",
@@ -81,7 +81,7 @@ const menu = [
     },
     {
       id: 11,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-11.jpg",
@@ -89,7 +89,7 @@ const menu = [
     },
     {
       id: 12,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-12.jpg",
@@ -97,7 +97,7 @@ const menu = [
     },
     {
       id: 13,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-13.jpg",
@@ -105,7 +105,7 @@ const menu = [
     },
     {
       id: 14,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-14.jpg",
@@ -113,7 +113,7 @@ const menu = [
     },
     {
       id: 15,
-      title: "pancakes",
+      title: "Sushi",
       category: "Salade",
       price: 5.99,
       img: "./images/item-15.jpg",
@@ -121,7 +121,7 @@ const menu = [
     },
     {
       id: 16,
-      title: "pancakes",
+      title: "Obento",
       category: "Salade",
       price: 5.99,
       img: "./images/item-16.jpg",
@@ -129,7 +129,7 @@ const menu = [
     },
     {
       id: 17,
-      title: "pancakes",
+      title: "Obento",
       category: "Salade",
       price: 5.99,
       img: "./images/item-17.jpg",
@@ -137,7 +137,7 @@ const menu = [
     },
     {
       id: 18,
-      title: "pancakes",
+      title: "Obento",
       category: "Obento",
       price: 5.99,
       img: "./images/item-18.jpg",
@@ -145,7 +145,39 @@ const menu = [
     },
     {
       id: 19,
-      title: "pancakes",
+      title: "Obento",
+      category: "Obento",
+      price: 5.99,
+      img: "./images/item-19.jpg",
+      desc: `hammock freegan copper mug whatever cold-pressed `,
+    },
+    {
+      id: 19,
+      title: "Obento",
+      category: "Obento",
+      price: 5.99,
+      img: "./images/item-19.jpg",
+      desc: `hammock freegan copper mug whatever cold-pressed `,
+    },
+    {
+      id: 19,
+      title: "Obento",
+      category: "Obento",
+      price: 5.99,
+      img: "./images/item-19.jpg",
+      desc: `hammock freegan copper mug whatever cold-pressed `,
+    },
+    {
+      id: 19,
+      title: "Obento",
+      category: "Obento",
+      price: 5.99,
+      img: "./images/item-19.jpg",
+      desc: `hammock freegan copper mug whatever cold-pressed `,
+    },
+    {
+      id: 19,
+      title: "Obento",
       category: "Obento",
       price: 5.99,
       img: "./images/item-19.jpg",
@@ -153,7 +185,7 @@ const menu = [
     },
     {
       id: 20,
-      title: "pancakes",
+      title: "Obento",
       category: "Obento",
       price: 5.99,
       img: "./images/item-20.jpg",
@@ -263,8 +295,10 @@ const menu = [
         </div>
         `;
     });
-    displayMenu = displayMenu.join('');
-    products.innerHTML = displayMenu;
+/*     displayMenu = displayMenu.join('');
+ */    products.innerHTML = displayMenu;
+
+
     if(products.firstChild){
        let listedProducts = products.querySelectorAll('.product');
        

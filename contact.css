@@ -69,7 +69,24 @@ body{
     justify-content: center;
     align-items: center;
 } 
-
+main{
+    display: flex;
+    gap: 20px;
+}
+.mapbody{
+    height: inherit;
+}
+.map {
+    width: 600px;
+    height: 100%;
+  }
+  
+  .map iframe {
+    height: 100%;
+    width: 100%;
+    border: 3px;
+    filter: drop-shadow(0px 1px 10px rgba(247, 181, 181, 0.4));
+  }
 
 button{
     width: fit-content;
