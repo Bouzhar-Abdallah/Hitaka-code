@@ -233,7 +233,8 @@ const menu = [
         `
     }).join("");
     filterSelect.innerHTML = categoriesSelect;
-
+    //console.log(categoriesSelect);
+    //console.log(categories);
   });
 
 
