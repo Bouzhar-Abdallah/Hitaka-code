@@ -162,7 +162,9 @@ footer {
     color: var(--White);
     cursor: pointer;
   }
-
+  .fa-bars,.fa-bars:before{
+    display: none;
+  }
   @media screen and (max-width:800px) {
     main .introduction img{
         height: 230px;
@@ -187,6 +189,9 @@ footer {
      }
   }
   @media screen and (max-width: 500px) {
+    .fa-bars,.fa-bars:before{
+        display: unset;
+      }
     nav{
         flex-direction: row-reverse;
     }
@@ -212,6 +217,7 @@ footer {
         font-size: 40px;
     }
     .hide{
+
         left: 0;
         transition: all 200ms ease-in-out;
     }
@@ -231,3 +237,4 @@ footer {
       width: auto;
     }
   }
+  

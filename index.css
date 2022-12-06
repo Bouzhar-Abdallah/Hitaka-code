@@ -130,14 +130,16 @@ footer {
     color: var(--White);
     cursor: pointer;
   }
+  .fa-bars,.fa-bars:before{
+    display: none;
+  }
 
   @media screen and (max-width: 1180px){
    h3{
     color: #EA3449;
    }
    
-element.style {
-}
+
 span {
     display: block;
 }
@@ -153,6 +155,9 @@ span {
 }
 
 @media screen and (max-width: 500px) {
+    .fa-bars,.fa-bars:before{
+        display: unset;
+      }
     nav{
         flex-direction: row-reverse;
     }

@@ -156,7 +156,9 @@ footer {
     color: #fff;
     background-color: #0D1F2D;
   }
-
+  .fa-bars,.fa-bars:before{
+    display: none;
+  }
   @media screen and (max-width: 700px) {
     .form-holder{
         width: 80vw;
@@ -190,6 +192,9 @@ footer {
   }
 
   @media screen and (max-width: 500px) {
+    .fa-bars,.fa-bars:before{
+        display: unset;
+      }
     nav{
         flex-direction: row-reverse;
     }
@@ -220,6 +225,7 @@ footer {
         transition: all 200ms ease-in-out;
     }
   }
+  
   @media screen and (max-width: 340px) {
 
     li .fa-bars{

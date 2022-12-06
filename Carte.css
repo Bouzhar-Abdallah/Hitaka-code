@@ -307,7 +307,13 @@ body{
   background-color: #0D1F2D;
   color: #F5F84F;
 }
+.fa-bars,.fa-bars:before{
+  display: none;
+}
 @media screen and (max-width: 500px) {
+  .fa-bars,.fa-bars:before{
+    display: unset;
+  }
   nav{
       flex-direction: row-reverse;
   }
@@ -352,3 +358,4 @@ body{
     width: auto;
   }
 }
+
