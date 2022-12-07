@@ -359,3 +359,55 @@ body{
   }
 }
 
+.ticket-container{
+  
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* display: none; */
+}
+.ticket{
+  width: 30vw;
+  height: fit-content;
+  margin-top: 20vh;
+  background-color: white;
+}
+
+
+.ticket .orderst{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ticket .choice{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.ticket .q{
+  font-size: small;
+  font-weight: lighter;
+  margin-left: auto;
+}
+.ticket .choice-price{
+  width: 80px;
+  text-align: right;
+}
+
+.hide-ticket{
+  display: none;
+}
+.finaliser:hover{
+  background-color: #F5F84F;
+  
+}
+.order-footer .finaliser{
+  border: 2px solid #0D1F2D;
+ 
+}
