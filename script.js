@@ -401,20 +401,24 @@ const menu = [
   }); */
 
    
-   let TotalPriceE=document.querySelector('.pricet');
+   
+     
+
+     /* +++++++++ */
+     let submitOrder = document.querySelector(".submitOrder");
+     submitOrder.addEventListener("click", function(){
+      
+      allKeys = Object.keys(localStorage);
+      let TotalPriceE=document.querySelector('.pricet');
     let totalPrice=0;
+    allKeys = Object.keys(localStorage);
+    
     for(let KEY of allKeys){
       let order = JSON.parse(localStorage.getItem(KEY));
       totalPrice+= order.q * order.price;
      }
      TotalPriceE.innerHTML ='$ ';
      TotalPriceE.innerHTML += totalPrice.toFixed(2);
-
-
-     /* +++++++++ */
-     let submitOrder = document.querySelector(".submitOrder");
-     submitOrder.addEventListener("click", function(){
-      allKeys = Object.keys(localStorage);
       orderstContainer.innerHTML='';
       allKeys.forEach(function(elem){
         const order = JSON.parse(localStorage.getItem(elem));
