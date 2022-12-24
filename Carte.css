@@ -127,12 +127,13 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 20px;
+  padding: 10px;
+  
 }
 .product{
   width: min-content;
   background-color: #EA3449;
-  margin: 10px;
+  margin: 10px auto;
   cursor: pointer;
 }
 .picture{
@@ -306,7 +307,13 @@ body{
   background-color: #0D1F2D;
   color: #F5F84F;
 }
+.fa-bars,.fa-bars:before{
+  display: none;
+}
 @media screen and (max-width: 500px) {
+  .fa-bars,.fa-bars:before{
+    display: unset;
+  }
   nav{
       flex-direction: row-reverse;
   }
@@ -350,4 +357,57 @@ body{
     height: 50px;
     width: auto;
   }
+}
+
+.ticket-container{
+  
+  background-color: rgba(0,0,0,0.8);
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* display: none; */
+}
+.ticket{
+  width: 30vw;
+  height: fit-content;
+  margin-top: 20vh;
+  background-color: white;
+}
+
+
+.ticket .orderst{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ticket .choice{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.ticket .q{
+  font-size: small;
+  font-weight: lighter;
+  margin-left: auto;
+}
+.ticket .choice-price{
+  width: 80px;
+  text-align: right;
+}
+
+.hide-ticket{
+  display: none;
+}
+.finaliser:hover{
+  background-color: #F5F84F;
+  
+}
+.order-footer .finaliser{
+  border: 2px solid #0D1F2D;
+ 
 }

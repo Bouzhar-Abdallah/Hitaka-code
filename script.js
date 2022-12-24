@@ -199,6 +199,7 @@ const menu = [
 
   const products = document.querySelector('.products');
   const ordersContainer = document.querySelector('.orders');
+  const orderstContainer = document.querySelector('.orderst');
   const filterSelect = document.querySelector('.filtre');
   const ordersCount = document.querySelector('.choice_count');
   const cart=document.querySelector('.cart');
@@ -233,7 +234,8 @@ const menu = [
         `
     }).join("");
     filterSelect.innerHTML = categoriesSelect;
-
+    //console.log(categoriesSelect);
+    //console.log(categories);
   });
 
 
@@ -338,7 +340,7 @@ const menu = [
       `
       <div class="choice" id="${order.id}">
             <span class="q">Q: ${order.q}.
-                <span class="choice-name">${order.name}</span>
+                <span class="choice-name"> ${order.name}</span>
             </span>
            
             <span class="choice-price">$${' '+(order.price*order.q).toFixed(2)}
@@ -392,3 +394,68 @@ const menu = [
      TotalPriceE.innerHTML ='$ ';
      TotalPriceE.innerHTML += totalPrice.toFixed(2);
   }
+
+/*   
+    
+    
+  }); */
+
+   
+   
+     
+
+     /* +++++++++ */
+     let submitOrder = document.querySelector(".submitOrder");
+     submitOrder.addEventListener("click", function(){
+      
+      allKeys = Object.keys(localStorage);
+      let TotalPriceE=document.querySelector('.pricet');
+    let totalPrice=0;
+    allKeys = Object.keys(localStorage);
+    
+    for(let KEY of allKeys){
+      let order = JSON.parse(localStorage.getItem(KEY));
+      totalPrice+= order.q * order.price;
+     }
+     TotalPriceE.innerHTML ='$ ';
+     TotalPriceE.innerHTML += totalPrice.toFixed(2);
+      orderstContainer.innerHTML='';
+      allKeys.forEach(function(elem){
+        const order = JSON.parse(localStorage.getItem(elem));
+        orderstContainer.innerHTML += 
+        `
+        <div class="choice" id="${order.id}">
+        <span class="choice-name">
+         ${order.name}
+         </span>
+              <span class="q">${order.q} x ${order.price}
+              =
+              </span>
+             
+              <span class="choice-price">
+              $${' '+(order.price*order.q).toFixed(2)}   
+              </span>
+              
+          </div>
+        `
+       });
+      let ticket = document.querySelector(".ticket-container");
+      ticket.classList.toggle("hide-ticket");
+      let element = document.querySelector(".order");
+      element.classList.toggle("hide_order");
+    
+       })
+
+      let finaliser = document.querySelector(".finaliser");
+      finaliser.addEventListener("click", function(){
+        localStorage.clear();
+        
+        ordersCount.innerHTML=0;
+        let ticket = document.querySelector(".ticket-container");
+        ticket.classList.toggle("hide-ticket");
+        /* let element = document.querySelector(".order");
+        element.classList.toggle("hide_order"); */
+        let allKeys = Object.keys(localStorage);
+        displayOrders(allKeys); 
+      
+         })
